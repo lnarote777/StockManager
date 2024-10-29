@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec863b6-277f-46c2-b901-bafa005723ee" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/model/Producto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/model/Proveedor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/model/Usuario.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/service/Proveedor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    <list default="true" id="5ec863b6-277f-46c2-b901-bafa005723ee" name="Changes" comment="tablas">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/output/Console.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/output/IConsole.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/repository/RepoProduct.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/repository/RepoProveedor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/repository/UserRepo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/service/ProductService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/service/ProveedorService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -31,6 +35,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "lnarote777"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/lnarote777/StockManager.git",
@@ -91,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729794600314</updated>
       <workItem from="1729794601762" duration="1995000" />
-      <workItem from="1730222339506" duration="852000" />
+      <workItem from="1730222339506" duration="2379000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -101,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730223154916</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tablas">
+      <option name="closed" value="true" />
+      <created>1730223248863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730223248863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="tablas" />
+    <option name="LAST_COMMIT_MESSAGE" value="tablas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
