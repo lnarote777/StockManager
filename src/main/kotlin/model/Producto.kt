@@ -1,7 +1,7 @@
 package org.example.model
 
 import jakarta.persistence.*
-import java.sql.Date
+import java.util.*
 
 @Entity
 @Table
@@ -11,24 +11,25 @@ data class Producto(
     val categoria: String,
 
     @Column(nullable = false, length = 50)
-    val nombre: String,
+    var nombre: String,
 
     @Column(nullable = false)
-    val  descripcion: String,
+    val descripcion: String,
 
     @Column(name = "precio_sin_iva",nullable = false)
     val precioSinIva: Float,
 
     @Column(name = "precio_con_iva", nullable = false)
-    val precioConIva: Float,
+    val precioConIva: Float = precioSinIva * 1.21f,
 
     @Column(name = "fecha_alta",nullable = false)
     val fechaAlta: Date,
 
     @Column(nullable = false)
-    val stock: Int,
+    var stock: Int,
 
     @ManyToOne()
+    @JoinColumn(name = "proveedor_id")
     val proveedor: Proveedor,
 
     @Id

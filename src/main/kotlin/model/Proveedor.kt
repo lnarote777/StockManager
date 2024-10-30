@@ -3,7 +3,7 @@ package org.example.model
 import jakarta.persistence.*
 
 @Entity
-@Table
+@Table(name = "proveedor")
 class Proveedor(
 
     @Column(nullable = false)
@@ -12,12 +12,12 @@ class Proveedor(
     @Column(nullable = false)
     val direccion: String,
 
-    @OneToMany(cascade = [(CascadeType.ALL)])
-    val productors: List<Producto>,
+    @OneToMany(mappedBy = "proveedor",cascade = [(CascadeType.ALL)])
+    val productos: List<Producto> = mutableListOf(),
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long
+    val id: Long? = null
 
 ) {
 }
