@@ -7,9 +7,6 @@ import org.example.repository.UserRepo
 import org.example.service.ProductService
 import org.example.service.ProveedorService
 
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
     //Instancias repository
     val productRepo = RepoProduct()

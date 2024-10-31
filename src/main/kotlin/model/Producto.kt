@@ -4,7 +4,7 @@ import jakarta.persistence.*
 import java.util.*
 
 @Entity
-@Table
+@Table(name = "producto")
 data class Producto(
 
     @Column(nullable = false, length = 10)
@@ -33,7 +33,6 @@ data class Producto(
     val proveedor: Proveedor,
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: String
 ) {
 }

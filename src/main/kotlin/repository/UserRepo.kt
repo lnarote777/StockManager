@@ -25,6 +25,7 @@ class UserRepo {
             em.transaction.commit()
             usuario
         }catch (e: Exception){
+            em.transaction.rollback()
             null
         }
     }
