@@ -14,7 +14,7 @@
             <!-- Driver -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <!-- URL -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/stockManager" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/stockmanager" />
             <property name="javax.persistence.jdbc.user" value="root" />
             <property name="javax.persistence.jdbc.password" value="" />
 
