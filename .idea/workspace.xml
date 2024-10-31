@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec863b6-277f-46c2-b901-bafa005723ee" name="Changes" comment="casi terminado, revisar login y generar id">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5ec863b6-277f-46c2-b901-bafa005723ee" name="Changes" comment="cambiar el login">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Menu.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Producto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Producto.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Proveedor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Proveedor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Usuario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Usuario.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repository/RepoProduct.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repository/RepoProduct.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/repository/RepoProveedor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repository/RepoProveedor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/repository/UserRepo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/repository/UserRepo.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/ProductService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/ProductService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/ProveedorService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/ProveedorService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +116,7 @@
       <workItem from="1730222339506" duration="3143000" />
       <workItem from="1730300481550" duration="23003000" />
       <workItem from="1730373920631" duration="6114000" />
+      <workItem from="1730392218713" duration="14462000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -172,7 +166,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730334716913</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="funciona, comprobar mensajes cuando sea null">
+      <option name="closed" value="true" />
+      <created>1730404883478</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730404883479</updated>
+    </task>
+    <task id="LOCAL-00008" summary="cambiar el login">
+      <option name="closed" value="true" />
+      <created>1730405918799</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730405918799</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +195,19 @@
     <MESSAGE value="repository and services done" />
     <MESSAGE value="consola, main y menu done" />
     <MESSAGE value="casi terminado, revisar login y generar id" />
-    <option name="LAST_COMMIT_MESSAGE" value="casi terminado, revisar login y generar id" />
+    <MESSAGE value="funciona, comprobar mensajes cuando sea null" />
+    <MESSAGE value="cambiar el login" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambiar el login" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Menu.kt</url>
+          <line>85</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

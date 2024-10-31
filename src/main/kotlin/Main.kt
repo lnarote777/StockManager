@@ -39,6 +39,5 @@ fun main() {
 
     val menu = Menu(consola, proveedorService, productService, userRepo)
     menu.menuLogin()
-    menu.menuGestion()
 
 }

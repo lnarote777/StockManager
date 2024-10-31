@@ -22,6 +22,6 @@ data class Proveedor(
 ){
     constructor() : this("", "", mutableListOf())
     override fun toString(): String {
-        return "Proveedor(id=$id, nombre='$nombre')"
+        return "Proveedor(id=$id, nombre='$nombre', direccion='$direccion')"
     }
 }

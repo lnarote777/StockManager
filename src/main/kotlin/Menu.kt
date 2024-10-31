@@ -37,6 +37,7 @@ class Menu(
 
                 if (user != null) {
                     consola.mostrarMensaje("Bienvenid@: ")
+                    menuGestion()
                     login = true
                 }else{
                     consola.mostrarMensaje("No se encontró al usuario.")

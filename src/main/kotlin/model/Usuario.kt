@@ -13,4 +13,5 @@ data class Usuario(
     val nombre: String
 
 ){
+    constructor() : this("","")
 }
