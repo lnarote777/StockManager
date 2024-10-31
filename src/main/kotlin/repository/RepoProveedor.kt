@@ -10,10 +10,14 @@ class RepoProveedor {
 
     companion object {
         private val emf: EntityManagerFactory = Persistence.createEntityManagerFactory("StockManager")
-        val em: EntityManager = emf.createEntityManager()
+    }
+
+    private fun getEntityManager(): EntityManager {
+        return emf.createEntityManager()
     }
 
     fun getProveedorProducto(idProducto: String): Proveedor?{
+        val em = getEntityManager()
         return try {
             em.transaction.begin()
             val producto = em.find(Producto::class.java, idProducto)
@@ -23,10 +27,13 @@ class RepoProveedor {
         } catch (e: Exception) {
             em.transaction.rollback()
             null
+        }finally {
+            em.close()
         }
     }
 
     fun getTodosProveedores(): List<Proveedor>?{
+        val em = getEntityManager()
         return try {
             em.transaction.begin()
             val proveedores = em.createQuery("SELECT p FROM Proveedor p", Proveedor::class.java).resultList
@@ -35,6 +42,8 @@ class RepoProveedor {
         } catch (e: Exception) {
             em.transaction.rollback()
             null
+        }finally {
+            em.close()
         }
     }
 

@@ -3,7 +3,7 @@ package org.example.service
 import org.example.model.Proveedor
 import org.example.repository.RepoProveedor
 
-class ProveedorService(val proveedorRepo : RepoProveedor) {
+class ProveedorService(private val proveedorRepo : RepoProveedor) {
     fun getProveedorProducto(idProducto: String): Proveedor?{
         return proveedorRepo.getProveedorProducto(idProducto)
     }

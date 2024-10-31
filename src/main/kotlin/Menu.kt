@@ -74,16 +74,15 @@ class Menu(
             try {
                 when (opc) {
                     "1" -> {
-                        val idProducto = consola.pedirIdProducto()
-                        val nombreProducto = consola.pedirString("Nombre producto: ")
-                        val precioSinIva = consola.pedirFloat("Precio producto (sin iva): ")
-                        val descripcion = consola.pedirString("Descripcion: ")
-                        val categoria = consola.pedirString("Categoria: ")
+                        val nombreProducto = consola.pedirString("Nombre producto: ", false)
+                        val precioSinIva = consola.pedirFloat("Precio producto (sin iva): ", false)
+                        val descripcion = consola.pedirString("Descripcion: ", false)
+                        val categoria = consola.pedirString("Categoria: ",false)
                         val idProveedor = consola.pedirIdProveedor()
-                        val nombreProveedor = consola.pedirString("Nombre proveedor: ")
-                        val direccionProveedor = consola.pedirString("Direccion proveedor: ")
+                        val nombreProveedor = consola.pedirString("Nombre proveedor: ",false)
+                        val direccionProveedor = consola.pedirString("Direccion proveedor: ",false)
 
-                        productService.altaProducto(idProducto, nombreProducto, precioSinIva, descripcion, idProveedor, nombreProveedor, direccionProveedor, categoria)
+                        productService.altaProducto(nombreProducto, precioSinIva, descripcion, idProveedor, nombreProveedor, direccionProveedor, categoria)
                     }
                     "2" -> {
                         val idProducto = consola.pedirIdProducto()
@@ -91,12 +90,12 @@ class Menu(
                     }
                     "3" -> {
                         val idProducto = consola.pedirIdProducto()
-                        val nuevoNombre = consola.pedirString("Nuevo nombre: ")
+                        val nuevoNombre = consola.pedirString("Nuevo nombre: ", false)
                         productService.modificarNombreProducto(idProducto, nuevoNombre)
                     }
                     "4" -> {
                         val idProducto = consola.pedirIdProducto()
-                        val stock = consola.pedirInt("Stock: ")
+                        val stock = consola.pedirInt("Stock: ",false)
                         productService.modificarStockProducto(idProducto, stock)
                     }
                     "5" -> {

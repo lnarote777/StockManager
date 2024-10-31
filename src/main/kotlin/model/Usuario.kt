@@ -3,7 +3,7 @@ package org.example.model
 import jakarta.persistence.*
 
 @Entity
-@Table
+@Table(name = "usuario")
 data class Usuario(
 
     @Column(nullable = false, length = 20)
@@ -12,6 +12,5 @@ data class Usuario(
     @Id
     val nombre: String
 
-) {
-
+){
 }

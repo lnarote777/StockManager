@@ -8,14 +8,15 @@ import org.example.model.Usuario
 class UserRepo {
     companion object {
         private val emf: EntityManagerFactory = Persistence.createEntityManagerFactory("StockManager")
-        val em: EntityManager = emf.createEntityManager()
+
     }
 
     fun login(userInput:String , passInput: String): Usuario?{
+        val em: EntityManager = emf.createEntityManager()
         return try {
             em.transaction.begin()
             val query = em.createQuery(
-                "SELECT u FROM Usuario u WHERE u.nombreUsuario = :userInput AND u.contrasena = :passInput",
+                "SELECT u FROM Usuario u WHERE u.nombre = :userInput AND u.password = :passInput",
                 Usuario::class.java
             )
             query.setParameter("userInput", userInput)
@@ -27,6 +28,8 @@ class UserRepo {
         }catch (e: Exception){
             em.transaction.rollback()
             null
+        }finally {
+            em.close()
         }
     }
 }

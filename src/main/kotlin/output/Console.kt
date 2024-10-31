@@ -21,20 +21,20 @@ class Console: IConsole {
         return id
     }
 
-    override fun pedirString(mensaje: String): String {
-        mostrarMensaje(mensaje)
+    override fun pedirString(mensaje: String, salto: Boolean): String {
+        mostrarMensaje(mensaje, salto)
         val string = readln()
         return string
     }
 
-    override fun pedirInt(mensaje: String): Int {
-        mostrarMensaje(mensaje)
+    override fun pedirInt(mensaje: String, salto: Boolean): Int {
+        mostrarMensaje(mensaje, salto)
         val int = readln().toInt()
         return int
     }
 
-    override fun pedirFloat(mensaje: String): Float {
-        mostrarMensaje(mensaje)
+    override fun pedirFloat(mensaje: String, salto: Boolean): Float {
+        mostrarMensaje(mensaje, salto)
         val float = readln().toFloat()
         return float
     }

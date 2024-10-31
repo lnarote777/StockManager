@@ -14,7 +14,7 @@ fun main() {
     val userRepo = UserRepo()
 
     //Istancias Services
-    val productService = ProductService(productRepo, proveedorRepo)
+    val productService = ProductService(productRepo)
     val proveedorService = ProveedorService(proveedorRepo)
 
     val consola = Console()
